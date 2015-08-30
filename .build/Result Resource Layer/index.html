@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8"/>
+    <meta name="description" content="Pedometer"/>
+    <title>Pedometer</title>
+    <link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+</head>
+<body>
+
+    <div class="ui-page ui-page-active" id="main">
+		<header class="ui-header">
+			<h5 class="ui-title">I-Calories</h5>
+		</header>
+		
+		<section class="ui-content">
+            <a href="#" id="start-btn" class="tile">
+                <span class="thumbnail"></span>
+                <span class="title">Start</span>
+            </a>
+            <a href="#" id="save-btn" class="tile">
+                <span class="thumbnail"></span>
+                <span class="title">Save</span>
+            </a>
+            <a href="#" id="about-btn" class="tile">
+                <span class="thumbnail"></span>
+                <span class="title">About</span>
+            </a>
+            <a href="#" id="exit-btn" class="tile">
+                <span class="thumbnail"></span>
+                <!-- <span class="title">LOGO</span>  -->
+            </a>
+        </section>
+		
+		<!--  		
+		<div class="ui-content content-padding">
+			<div class="ui-grid-col-3 button-group-height">
+				<button type="button"  class="start ui-btn">Start</button>
+				<button type="button"  class="stop ui-btn">Stop</button>
+				<button type="button"  class="store ui-btn">Store</button>
+			</div>
+			
+			<ul style="height:20px" class="ui-listview">
+			        <li id="xaccel" style="font-size: 20px">X</li>
+					<li id="yaccel" style="font-size: 20px">Y</li>
+					<li id="zaccel" style="font-size: 20px">Z</li>
+			</ul>			
+		</div>
+		-->		
+	</div>
+	
+	
+	<div class="ui-page" id="starting" >
+
+	    <header class="ui-header">
+			<h5 class="ui-title">I-Calories</h5>
+		</header>
+        
+		<section class="ui-content" >
+            <a href="#" id="stop-btn" class="tile2">
+                <span class="thumbnail"></span>
+                <span class="title">Stop</span>
+            </a>   
+            
+            <!--    align="center"   
+            <div class="ui-content content-padding">
+		        <ul style="height:20px" class="ui-listview">
+					        <li id="xaccel" style="font-size: 20px">X</li>
+							<li id="yaccel" style="font-size: 20px">Y</li>
+							<li id="zaccel" style="font-size: 20px">Z</li>
+				</ul>  
+		    </div>
+		    -->     
+        </section>	
+    </div>
+	
+	<!--  -->
+	<div class="ui-page" id="store">
+	    <div class="ui-content content-padding">
+	    
+	    	<!--  
+			<div class="ui-grid-col-3 button-group-height">
+				<button type="button" class="connect ui-btn">Connect</button>
+				<button type="button" class="save ui-btn">Save</button>
+				<button type="button" class="deconnect ui-btn">Deconnect</button>
+			</div>		
+			
+			
+			<div class="ok-button">
+				<button id="okbtn" type="button" class="ok ui-btn" >OK</button>
+			</div>
+			-->
+			
+			
+			<div id="resultBoard"></div> 				
+		</div>	  
+	</div>
+	     
+
+    <script src="./lib/tau/wearable/js/tau.js"></script>
+    <script src="./js/core/core.js" data-main="./js/app.js"></script>
+
+</body>
+</html>
